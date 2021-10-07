@@ -1,7 +1,7 @@
-import "./clock1.css";
+import "./clock2.css";
 import moment from "moment";
 
-const Clock1 = () => {
+const Clock2 = (props) => {
   const dateTime=moment();
   const timeStr=dateTime.format("HH:mm");
   const dateStr=dateTime.format("LL");
@@ -15,7 +15,7 @@ else if(hour<21)message="Evening";
 else message="Night"
  
   return (
-    <div className="clock-container">
+    <div className="clock-container" style={{color:props.yaziRengi, backgroundColor:props.zeminRengi}}>
       <div className="clock">{timeStr}</div>
       <div>
         <div className="date">{dateStr}</div>
@@ -25,4 +25,4 @@ else message="Night"
   );
 };
 
-export default Clock1;
+export default Clock2;
