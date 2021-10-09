@@ -1,16 +1,20 @@
-import React from 'react'
-import User from "./components/User"
-import Comp from './components/comp/Comp'
-import Hello from './components/hello/Hello'
-import Jsx from './components/jsx/Jsx'
-import InlineStyle from './components/style/InlineStyle'
-import InternalStyle from './components/style/InternalStyle'
-import ExternalStyle from './components/style/ExternalStyle'
-import Clock1 from './components/clock1/Clock1'
-import Props from './components/props/Props'
-import Clock2 from './components/clock2/Clock2'
+import React from "react";
+import User from "./components/User";
+import Comp from "./components/comp/Comp";
+import Hello from "./components/hello/Hello";
+import Jsx from "./components/jsx/Jsx";
+import InlineStyle from "./components/style/InlineStyle";
+import InternalStyle from "./components/style/InternalStyle";
+import ExternalStyle from "./components/style/ExternalStyle";
+import Clock1 from "./components/clock1/Clock1";
+import Props from "./components/props/Props";
+import Clock2 from "./components/clock2/Clock2";
+import Profile from "./components/profile/Profile";
 
 const App = () => {
+  const avatarUrl = "https://picsum.photos/200/200";
+
+  const avatarUrl2 = "https://picsum.photos/200/300";
   return (
     <div>
       <div className="App">
@@ -27,12 +31,27 @@ const App = () => {
         <Props ad="Mine" soyad=" Ayşe"/>
         <Props ad="Dila" soyad=" Halide"/>
         <Props ad="Merve" soyad=" İzgi"/> */}
-        <Clock2 yaziRengi="yellow" zeminRengi="navy"/>    
-      
+        {/* <Clock2 yaziRengi="yellow" zeminRengi="navy" /> */}
+        <Profile
+          avatar={avatarUrl}
+          name="Ali Gel"
+          location="Türkiye, İstanbul"
+          shot="4"
+          followers="25"
+          following="45"
+        />
 
+        <Profile
+          avatar={avatarUrl2}
+          name="Mehmet Gel"
+          location="Türkiye, Adana"
+          shot="4"
+          followers="27"
+          following="35"
+        />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
