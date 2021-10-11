@@ -10,10 +10,13 @@ import Clock1 from "./components/clock1/Clock1";
 import Props from "./components/props/Props";
 import Clock2 from "./components/clock2/Clock2";
 import Profile from "./components/profile/Profile";
+import Image from "./components/image/Image";
+import BSClassic from "./components/bootsrapClassic/BSClassic";
+import BSReact from "./components/bootsrap-react/BSReact";
+import Shop from "./components/shop/Shop";
 
 const App = () => {
   const avatarUrl = "https://picsum.photos/200/200";
-
   const avatarUrl2 = "https://picsum.photos/200/300";
   return (
     <div>
@@ -32,7 +35,7 @@ const App = () => {
         <Props ad="Dila" soyad=" Halide"/>
         <Props ad="Merve" soyad=" İzgi"/> */}
         {/* <Clock2 yaziRengi="yellow" zeminRengi="navy" /> */}
-        <Profile
+        {/* <Profile
           avatar={avatarUrl}
           name="Ali Gel"
           location="Türkiye, İstanbul"
@@ -48,7 +51,12 @@ const App = () => {
           shot="4"
           followers="27"
           following="35"
-        />
+        /> */}
+
+        {/* <Image /> */}
+        {/* <BSClassic /> */}
+        {/* <BSReact /> */}
+        <Shop />
       </div>
     </div>
   );
