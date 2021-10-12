@@ -14,6 +14,9 @@ import Image from "./components/image/Image";
 import BSClassic from "./components/bootsrapClassic/BSClassic";
 import BSReact from "./components/bootsrap-react/BSReact";
 import Shop from "./components/shop/Shop";
+import State from "./components/state/State";
+import Counter from "./components/counter/Counter";
+import Birthday from "./components/birthday/Birthday";
 
 const App = () => {
   const avatarUrl = "https://picsum.photos/200/200";
@@ -22,20 +25,20 @@ const App = () => {
     <div>
       <div className="App">
         {/* <h4>Merhaba Dünya (App)</h4>
-        <Hello/>
-        <Comp/>
-        <User/>
-        <Jsx/>
-        <InlineStyle/>
-        <InternalStyle/>
-        <ExternalStyle/> */}
-        {/* <Clock1/> */}
-        {/* <Props ad="Akif" soyad=" Emre"/>
-        <Props ad="Mine" soyad=" Ayşe"/>
-        <Props ad="Dila" soyad=" Halide"/>
-        <Props ad="Merve" soyad=" İzgi"/> */}
-        {/* <Clock2 yaziRengi="yellow" zeminRengi="navy" /> */}
-        {/* <Profile
+        <Hello />
+        <Comp />
+        <User />
+        <Jsx />
+        <InlineStyle />
+        <InternalStyle />
+        <ExternalStyle />
+        <Clock1 />
+        <Props ad="Akif" soyad=" Emre" />
+        <Props ad="Mine" soyad=" Ayşe" />
+        <Props ad="Dila" soyad=" Halide" />
+        <Props ad="Merve" soyad=" İzgi" />
+        <Clock2 yaziRengi="yellow" zeminRengi="navy" />
+        <Profile
           avatar={avatarUrl}
           name="Ali Gel"
           location="Türkiye, İstanbul"
@@ -43,7 +46,6 @@ const App = () => {
           followers="25"
           following="45"
         />
-
         <Profile
           avatar={avatarUrl2}
           name="Mehmet Gel"
@@ -51,12 +53,15 @@ const App = () => {
           shot="4"
           followers="27"
           following="35"
-        /> */}
-
-        {/* <Image /> */}
-        {/* <BSClassic /> */}
-        {/* <BSReact /> */}
+        />
+        <Image />
+        <BSClassic />
+        <BSReact />
         <Shop />
+        <State />
+        <Counter /> */}
+
+        <Birthday />
       </div>
     </div>
   );
