@@ -17,6 +17,9 @@ import Shop from "./components/shop/Shop";
 import State from "./components/state/State";
 import Counter from "./components/counter/Counter";
 import Birthday from "./components/birthday/Birthday";
+import Clock3 from "./components/clock3/Clock3";
+import ChangeTitle from "./components/useEffect/ChangeTitle";
+import UserCards from "./components/userCards/UserCards";
 
 const App = () => {
   const avatarUrl = "https://picsum.photos/200/200";
@@ -59,9 +62,12 @@ const App = () => {
         <BSReact />
         <Shop />
         <State />
-        <Counter /> */}
+        <Counter /> 
 
-        <Birthday />
+        <Birthday /> 
+        <Clock3 /> 
+        <ChangeTitle />*/}
+        <UserCards />
       </div>
     </div>
   );
