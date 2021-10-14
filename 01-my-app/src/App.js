@@ -20,6 +20,8 @@ import Birthday from "./components/birthday/Birthday";
 import Clock3 from "./components/clock3/Clock3";
 import ChangeTitle from "./components/useEffect/ChangeTitle";
 import UserCards from "./components/userCards/UserCards";
+import Countries from "./components/countries/Countries";
+import Posts from "./components/posts/Posts";
 
 const App = () => {
   const avatarUrl = "https://picsum.photos/200/200";
@@ -67,8 +69,10 @@ const App = () => {
 
         <Birthday /> 
         <Clock3 /> 
-        <ChangeTitle />*/}
+        <ChangeTitle />
         <UserCards />
+        <Countries />*/}
+        <Posts />
       </div>
     </div>
   );
