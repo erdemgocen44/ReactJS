@@ -24,6 +24,7 @@ import UserCards from "./components/userCards/UserCards";
 const App = () => {
   const avatarUrl = "https://picsum.photos/200/200";
   const avatarUrl2 = "https://picsum.photos/200/300";
+
   return (
     <div>
       <div className="App">
