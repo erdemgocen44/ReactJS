@@ -22,6 +22,10 @@ import ChangeTitle from "./components/useEffect/ChangeTitle";
 import UserCards from "./components/userCards/UserCards";
 import Countries from "./components/countries/Countries";
 import Posts from "./components/posts/Posts";
+import RandomImages from "./components/randomImages/RandomImages";
+import Form1 from "./components/forms/Form1";
+import Form2 from "./components/forms/Form2";
+import Form3 from "./components/forms/Form3";
 
 const App = () => {
   const avatarUrl = "https://picsum.photos/200/200";
@@ -71,8 +75,12 @@ const App = () => {
         <Clock3 /> 
         <ChangeTitle />
         <UserCards />
-        <Countries />*/}
+        <Countries />
         <Posts />
+        <RandomImages />
+        <Form1 />
+        <Form2 />*/}
+        <Form3 />
       </div>
     </div>
   );
