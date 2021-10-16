@@ -1,5 +1,5 @@
 import React from "react";
-import User from "./components/User";
+import User from "./components/userCards/User";
 import Comp from "./components/comp/Comp";
 import Hello from "./components/hello/Hello";
 import Jsx from "./components/jsx/Jsx";
@@ -26,6 +26,7 @@ import RandomImages from "./components/randomImages/RandomImages";
 import Form1 from "./components/forms/Form1";
 import Form2 from "./components/forms/Form2";
 import Form3 from "./components/forms/Form3";
+import Form4 from "./components/forms/Form4";
 
 const App = () => {
   const avatarUrl = "https://picsum.photos/200/200";
@@ -79,8 +80,9 @@ const App = () => {
         <Posts />
         <RandomImages />
         <Form1 />
-        <Form2 />*/}
-        <Form3 />
+        <Form2 />
+        <Form3 />*/}
+        <Form4 />
       </div>
     </div>
   );
