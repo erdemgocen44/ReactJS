@@ -1,16 +1,21 @@
 import React, { useState } from "react";
 import { ButtonGroup, Button } from "react-bootstrap";
+
 const Counter = () => {
   const [sayac, setSayac] = useState(0);
+
   const artir = () => {
     setSayac(sayac + 1);
   };
+
   const azalt = () => {
     if (sayac > 0) setSayac(sayac - 1);
   };
+
   const reset = () => {
     setSayac(0);
   };
+
   return (
     <div className="d-flex justify-content-center mt-5">
       <ButtonGroup aria-label="Basic example">
@@ -30,4 +35,5 @@ const Counter = () => {
     </div>
   );
 };
+
 export default Counter;

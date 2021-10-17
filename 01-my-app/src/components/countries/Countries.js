@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Table, Container, Image, Spinner } from "react-bootstrap";
+import { Container, Table, Image, Spinner } from "react-bootstrap";
 import axios from "axios";
+
 const Countries = () => {
   const [countries, setCountries] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -10,17 +11,23 @@ const Countries = () => {
     countries.sort((a, b) => {
       var valueA = a[key] ? a[key] : "";
       var valueB = b[key] ? b[key] : "";
+
+      //console.log(valueA, valueB);
       var result = 0;
+
       if (valueA < valueB) {
         result = 1;
       } else if (valueA > valueB) {
         result = -1;
       }
+
       if (sortType) result *= -1;
       setSortType(!sortType);
+
       return result;
     });
 
+    // [...countries] bu işleme shallow copy denir
     setCountries([...countries]);
   };
 
@@ -47,16 +54,16 @@ const Countries = () => {
             <th>#</th>
             <th>Bayrak</th>
             <th>
-              <span onClick={() => sirala("name")}> Ülke</span>
+              <span onClick={() => sirala("name")}>Ülke</span>
             </th>
             <th>
-              <span onClick={() => sirala("capital")}> Başkent</span>
+              <span onClick={() => sirala("capital")}>Başkent</span>
             </th>
             <th>
-              <span onClick={() => sirala("population")}> Nüfus</span>
+              <span onClick={() => sirala("population")}>Nüfus</span>
             </th>
             <th>
-              <span onClick={() => sirala("area")}> Yüzölçümü</span>
+              <span onClick={() => sirala("area")}>Yüzölçümü</span>
             </th>
           </tr>
         </thead>

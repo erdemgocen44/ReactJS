@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { Form, Row, Col, Container } from "react-bootstrap";
+import { Container, Form, Row, Col } from "react-bootstrap";
 
 const Form1 = () => {
-  const [email, setemail] = useState("");
+  const [email, setEmail] = useState("");
 
   const handleEmail = (e) => {
-    setemail(e.target.value);
+    setEmail(e.target.value);
   };
+
   return (
     <Container className="mt-5">
       <Row className="justify-content-center">

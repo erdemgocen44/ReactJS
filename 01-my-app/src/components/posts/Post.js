@@ -1,5 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+
 const Post = (props) => {
   return (
     <Card className="mb-4">

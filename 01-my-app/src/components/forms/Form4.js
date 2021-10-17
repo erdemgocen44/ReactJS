@@ -54,7 +54,8 @@ const Form4 = () => {
     <Container className="mt-5">
       <Row className="justify-content-center">
         <Col md={5}>
-          {mesaj && <Alert variant="info">{mesaj}</Alert>}​
+          {mesaj && <Alert variant="info">{mesaj}</Alert>}
+
           <Form noValidate onSubmit={handleSubmit} validated={validated}>
             <Form.Group className="mb-3" controlId="ad">
               <Form.Label>Adınız</Form.Label>
@@ -71,7 +72,7 @@ const Form4 = () => {
                 Adınızı giriniz
               </Form.Control.Feedback>
             </Form.Group>
-            ​
+
             <Form.Group className="mb-3" controlId="soyad">
               <Form.Label>Soyadınız</Form.Label>
               <Form.Control
@@ -86,7 +87,7 @@ const Form4 = () => {
                 Soyadınızı giriniz
               </Form.Control.Feedback>
             </Form.Group>
-            ​
+
             <Form.Group className="mb-3" controlId="email">
               <Form.Label>Eposta Adresiniz</Form.Label>
               <Form.Control
@@ -101,7 +102,7 @@ const Form4 = () => {
                 Geçerli bir eposta giriniz
               </Form.Control.Feedback>
             </Form.Group>
-            ​
+
             <Form.Group className="mb-3" controlId="telefon">
               <Form.Label>Telefonunuz</Form.Label>
               <Form.Control
@@ -112,7 +113,7 @@ const Form4 = () => {
                 onChange={handleChange}
               />
             </Form.Group>
-            ​
+
             <Button variant="info" type="submit" disabled={loading}>
               {loading && (
                 <Spinner animation="border" variant="light" size="sm" />

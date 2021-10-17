@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
-import data from "../../data/product.json";
+import { Container, Row, Col } from "react-bootstrap";
+import data from "../../data/products.json";
 import Product from "./Product";
 
 const ProductList = () => {

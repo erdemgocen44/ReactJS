@@ -1,7 +1,9 @@
 import React from "react";
-import { Button, Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
+
 const Product = (props) => {
-  const { image, title, desk, price } = props;
+  const { title, price, desc, image } = props;
+
   return (
     <Card>
       <Card.Img
@@ -10,7 +12,7 @@ const Product = (props) => {
       />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
-        <Card.Text>{desk}</Card.Text>
+        <Card.Text>{desc}</Card.Text>
         <Card.Text>${price}</Card.Text>
         <Button variant="warning">Add Cart</Button>
       </Card.Body>

@@ -8,34 +8,44 @@ import {
   Alert,
   Spinner,
 } from "react-bootstrap";
+
 const Form2 = () => {
   const [ad, setAd] = useState("");
   const [soyad, setSoyad] = useState("");
   const [email, setEmail] = useState("");
   const [telefon, setTelefon] = useState("");
+
   const [mesaj, setMesaj] = useState("");
   const [loading, setLoading] = useState(false);
+
   const handleAd = (e) => {
     setAd(e.target.value);
   };
+
   const handleSoyad = (e) => {
     setSoyad(e.target.value);
   };
+
   const handleEmail = (e) => {
     setEmail(e.target.value);
   };
+
   const handleTelefon = (e) => {
     setTelefon(e.target.value);
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
     setMesaj("");
+
+    // Burası fake API
     setTimeout(() => {
       setMesaj("Bilgileriniz başarılı bir şekilde gönderildi");
       setLoading(false);
     }, 3000);
   };
+
   return (
     <Container className="mt-5">
       <Row className="justify-content-center">
@@ -52,6 +62,7 @@ const Form2 = () => {
                 onChange={handleAd}
               />
             </Form.Group>
+
             <Form.Group className="mb-3" controlId="soyad">
               <Form.Label>Soyadınız</Form.Label>
               <Form.Control
@@ -61,6 +72,7 @@ const Form2 = () => {
                 onChange={handleSoyad}
               />
             </Form.Group>
+
             <Form.Group className="mb-3" controlId="email">
               <Form.Label>Eposta Adresiniz</Form.Label>
               <Form.Control
@@ -70,6 +82,7 @@ const Form2 = () => {
                 onChange={handleEmail}
               />
             </Form.Group>
+
             <Form.Group className="mb-3" controlId="telefon">
               <Form.Label>Telefonunuz</Form.Label>
               <Form.Control
@@ -79,6 +92,7 @@ const Form2 = () => {
                 onChange={handleTelefon}
               />
             </Form.Group>
+
             <Button variant="info" type="submit" disabled={loading}>
               {loading && (
                 <Spinner animation="border" variant="light" size="sm" />
@@ -91,4 +105,5 @@ const Form2 = () => {
     </Container>
   );
 };
+
 export default Form2;

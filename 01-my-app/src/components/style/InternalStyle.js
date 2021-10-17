@@ -1,22 +1,18 @@
 const InternalStyle = () => {
   const styleParagraph = {
-    fontSize: "2rem",
     color: "orange",
+    fontSize: "2rem",
   };
 
-  const styleKendim = {
-    fontSize: "3rem",
-    color: "green",
+  const styleSalih = {
+    backgroundColor: "blue",
   };
+
   return (
     <div style={styleParagraph}>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa itaque
-      harum ad alias maiores voluptatum unde explicabo saepe omnis dolorem, quos
-      atque tempore{" "}
-      <span style={styleKendim}>
-        {" "}
-        recusandae inventore sapiente necessitatibus tempora enim aperiam?
-      </span>
+      hocam şöyle somut projelerde görmek istiyor insan
+      <span style={styleSalih}>(Salih Bayram)</span>
+      <div style={styleParagraph}>YEni yazı</div>
     </div>
   );
 };

@@ -4,12 +4,11 @@ const InlineStyle = () => {
       style={{
         fontSize: "3rem",
         color: "red",
-        fontWeight: "bold",
-        border: "2px solid black",
-        backgroundColor: "lime",
+        border: "1px solid red",
+        backgroundColor: "blue",
       }}
     >
-      Bugün <span style={{ color: "yellow" }}> hava </span>serin
+      Bugün <span style={{ color: "yellow" }}>hava</span> serin
     </div>
   );
 };

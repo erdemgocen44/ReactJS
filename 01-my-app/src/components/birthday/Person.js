@@ -1,5 +1,6 @@
 import React from "react";
-import { Card, NavItem } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+
 const Person = (props) => {
   const { image, name, age } = props;
   return (

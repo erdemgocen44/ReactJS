@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const ChangeTitle = () => {
   const [sayac, setSayac] = useState(0);
+
   const artir = () => {
     setSayac(sayac + 1);
   };
@@ -13,7 +14,7 @@ const ChangeTitle = () => {
   return (
     <div>
       <h2>{sayac} kere tıkladın</h2>
-      <button onClick={artir}>Tıkla</button>
+      <button onClick={artir}>TIKLA</button>
     </div>
   );
 };

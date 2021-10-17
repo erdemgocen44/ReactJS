@@ -1,19 +1,15 @@
 const Jsx = () => {
   const kullanici = {
-    ad: "Halide",
-    soyad: "Dila",
-    email: "halidedila@gmail.com",
-    telefon: "543543554",
+    ad: "ziya",
+    soyad: "sari",
+    email: "ziya@sari.com",
+    telefon: "55555555",
   };
 
   return (
     <div>
-      <div>
-        <h1>
-          Merhaba {kullanici.ad} {kullanici.soyad}
-        </h1>
-      </div>
-      <div>Eposta :{kullanici.email}</div>
+      <div>Merhaba {kullanici.ad + " " + kullanici.soyad}</div>
+      <div>Eposta: {kullanici.email}</div>
     </div>
   );
 };

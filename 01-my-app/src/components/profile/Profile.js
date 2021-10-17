@@ -1,10 +1,21 @@
 import React from "react";
 import "./profile.css";
+
 const Profile = (props) => {
-  //DESCRUCTORİNG
+  console.log(props);
 
-  //PROF YÖNTEM
+  // DESTRUCTERING
 
+  /* İLKEL YÖNTEM
+  const avatar = props.avatar;
+  const name = props.name;
+  const location = props.location;
+  const shot = props.shot;
+  const followers = props.followers;
+  const following = props.following;
+    */
+
+  /* PROF YÖNTEM */
   const { avatar, name, location, shot, followers, following } = props;
 
   return (
@@ -14,10 +25,11 @@ const Profile = (props) => {
       </div>
       <div className="person-content">
         <div className="person-avatar">
-          <img src={avatar} alt="" />
+          <img src={avatar} alt={name} />
         </div>
         <h3>{name}</h3>
         <h6>{location}</h6>
+
         <div className="person-stat">
           <div>
             {shot}

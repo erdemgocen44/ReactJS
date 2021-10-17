@@ -1,6 +1,9 @@
-const Props = (x) => {
-    return <h1>{x.ad}{x.soyad} hoşgeldin</h1>
-    
-}
+const Props = (props) => {
+  return (
+    <h1>
+      {props.ad} {props.soyad} hoşgeldin
+    </h1>
+  );
+};
 
-export default Props
+export default Props;
